@@ -8,9 +8,13 @@
 - idea:The player who captures the royal city will be opposed by everyone. If the royal city is successfully defended, the player who captures it wins; otherwise, the player who does not capture the royal city wins.(not take)
 
 player1 2
+
 player2 7
+
 player3 2
+
 player4 9
+
 
 
 ## playtest2 - 
@@ -25,7 +29,11 @@ new rule add .
 - add rules in card. let the player more easy to read.
 - Hostile Takeover need at least one investors to use.
 
-player1 2
-player2 7
-player3 2
-player4 9
+player1 
+
+player2 
+
+player3 
+
+player4 
+
