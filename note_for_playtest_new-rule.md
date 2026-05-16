@@ -1,6 +1,6 @@
-15/05/2026
+#15/05/2026 playtest
 
-playtest1 - play4 win
+##playtest1 - play4 win
 -The territory was occupied too quickly
 -One investor can take down half of the other investors.
 （按照数量来）
@@ -15,7 +15,7 @@ player4 9
 
 -add contest limt to 1
 
-playtest2 - 
+##playtest2 - 
 
 new rule add .
 
