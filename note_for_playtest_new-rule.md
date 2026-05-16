@@ -18,10 +18,12 @@ player4 9
 new rule add .
 - add contest limt to 1
 
+- 
 
 - The attacker uses how many investors to attack the territory, and the defender loses how many investors.
 - The remaining investors must remain on the territory.
 - If it's a draw, the defender retains the territory.
+- add rules in card. let the player more easy to read.
 
 player1 2
 player2 7
