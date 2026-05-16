@@ -17,7 +17,7 @@ player4 9
 
 
 
-## playtest2 - 
+## playtest2 - player4 win
 
 new rule add .
 - add contest limt to 1
@@ -29,11 +29,18 @@ new rule add .
 - add rules in card. let the player more easy to read.
 - Hostile Takeover need at least one investors to use.
 
-player1 
+contest 0 1+1 2+1+2+2
 
-player2 
+player1 5
 
-player3 
+player2 2
 
-player4 
+player3 5
 
+player4 8
+
+### problem:
+- player 4 win again
+- 
+
+## playtest3 - 
