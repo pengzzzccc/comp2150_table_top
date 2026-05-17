@@ -1,0 +1,4 @@
+label,title,effects,flavor text,image,cost,item-count,item-key
+joker,Central Hub,Produces 2 Investors per turn.,The nexus of trade and power.,https://firebasestorage.googleapis.com/v0/b/playingcardsio.appspot.com/o/a925848b-f5bb-45ca-9f22-2bd2b444cb29.svg?alt=media&token=81ee2da7-2d9b-4b64-b8d7-f6fe988426d2,1 Investor,1,central_hub
+joker,Outer Village,Produces 1 Investor per turn.,Peripheral holdings with modest returns.,https://firebasestorage.googleapis.com/v0/b/playingcardsio.appspot.com/o/7f380224-33d2-4028-8eea-d622645d5914.svg?alt=media&token=f633d38c-67e3-47e7-9a59-24ade1e3de48,,0,outer_village
+joker,Inner City,Produces 2 Investors per turn.,Dense urban core with stronger commerce.,https://firebasestorage.googleapis.com/v0/b/playingcardsio.appspot.com/o/d64dcc75-cdbe-454c-9c65-b6279cd8b3fc.svg?alt=media&token=2d5d4c0a-bc4b-4dae-81fc-4f152decd7a3,,0,inner_city
