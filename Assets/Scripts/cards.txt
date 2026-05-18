@@ -3,43 +3,43 @@
 # Lines starting with # are comments. Filename alone = quantity 1.
 
 # --- Fronts (26 unique) ---
-Castle.svg 1
-City.svg 4
-Hamlet.svg 8
+Castle.png 1
+City.png 4
+Hamlet.png 8
 #
-Petty-Cash.svg 8
-Aggressive-Expansion.svg 4
-Headhunt.svg 4
-Minor-Export.svg 8
-Branch-Office.svg 4
-Onboarding.svg 8
-Redeployment.svg 12
+Petty-Cash.png 8
+Aggressive-Expansion.png 4
+Headhunt.png 4
+Minor-Export.png 8
+Branch-Office.png 4
+Onboarding.png 8
+Redeployment.png 12
 #
-Hostile-Takeover.svg
-Strike-Action.svg
-Fortify.svg
-Angel-Investors.svg
+Hostile-Takeover.png
+Strike-Action.png
+Fortify.png
+Angel-Investors.png
 #
-Hostile-Negotiation.svg
-Corporate-Espionage.svg
-Political-Coup.svg
-Power-Play.svg
+Hostile-Negotiation.png
+Corporate-Espionage.png
+Political-Coup.png
+Power-Play.png
 #
-Market-Crash.svg
-Tax-Collection.svg
-Monopoly.svg
-Economic-Dominance.svg
+Market-Crash.png
+Tax-Collection.png
+Monopoly.png
+Economic-Dominance.png
 #
-Market-Slump.svg
-Mystical-Arbitrage.svg
-Time-Acceleration.svg
-Arcane-Surge.svg
+Market-Slump.png
+Mystical-Arbitrage.png
+Time-Acceleration.png
+Arcane-Surge.png
 
 
 
 
 # --- Backs (3 unique) ---
-title_cardback.svg 13
-draw_cardback.svg 48
-market_cardback.svg 16:
+title_cardback.png 13
+draw_cardback.png 48
+market_cardback.png 16
 

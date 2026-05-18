@@ -1,29 +1,35 @@
 #!/usr/bin/env python3
 """
-Tile SVG playing cards onto A4 pages for printing.
+Tile playing card images onto A4 pages for printing.
 
 - Poker card size: 63mm x 88mm
 - 3x3 grid per A4 page = 9 cards per page
 - 2mm gutter between cards (where cut marks live)
 - L-shaped cut marks at every card corner
 
+Accepts PNG or SVG files. PNGs are placed directly (use this mode when
+cards have been pre-exported from Inkscape for perfect rendering). SVGs
+are rendered via cairosvg as a fallback.
+
 Usage:
-    python tile_cards.py cards.txt output.pdf --svg-dir ./svgs
+    python tile_cards.py cards.txt output.pdf --img-dir ./Cards-png
 
 Config file format (one entry per line):
-    ace_spades.svg 4
-    king_hearts.svg 2
-    back_red.svg 26
+    Petty-Cash.png 3
+    draw_cardback.png 26
     # comments start with hash
     # filename alone defaults to quantity 1
 """
 import argparse
+import io
+import re
 from pathlib import Path
 
+import cairosvg
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
-from svglib.svglib import svg2rlg
+from reportlab.lib.utils import ImageReader
 
 
 # --- Layout constants ---
@@ -40,6 +46,9 @@ MARK_WIDTH = 0.3       # stroke width in points
 
 PAGE_W, PAGE_H = A4
 
+# Render DPI — overridden by --dpi flag at runtime
+DPI = 300
+
 
 def compute_grid_origin():
     """Return (x0, y0) bottom-left of the grid, centred on the page."""
@@ -49,16 +58,22 @@ def compute_grid_origin():
 
 
 def parse_config(config_path):
-    """Read 'filename quantity' lines. Bare filename = qty 1. '#' starts a comment."""
+    """Read 'filename quantity' lines. Bare filename = qty 1.
+    Accepts whitespace, ':', '=', or ',' as the separator.
+    '#' starts a comment (whole-line or inline)."""
+    # Match: <filename> <separator(s)> <integer> at end of line
+    pattern = re.compile(r"^(.*?)[\s:=,]+(\d+)\s*$")
     items = []
     with open(config_path) as f:
-        for line_num, line in enumerate(f, 1):
-            line = line.strip()
-            if not line or line.startswith("#"):
+        for line_num, raw in enumerate(f, 1):
+            line = raw.split("#", 1)[0].strip()  # strip inline + whole-line comments
+            if not line:
                 continue
-            parts = line.rsplit(None, 1)
-            if len(parts) == 2 and parts[1].isdigit():
-                items.append((parts[0], int(parts[1])))
+            m = pattern.match(line)
+            if m:
+                filename = m.group(1).strip().rstrip(":=,").strip()
+                qty = int(m.group(2))
+                items.append((filename, qty))
             else:
                 items.append((line, 1))
     return items
@@ -96,45 +111,56 @@ def draw_cut_marks(c, x, y):
     c.line(x + CARD_W, y + CARD_H, x + CARD_W, y + CARD_H + MARK_LEN)
 
 
-def draw_card(c, drawing, x, y):
-    """Render a pre-scaled svglib Drawing at (x, y)."""
-    drawing.drawOn(c, x, y)
+def render_card(img_path):
+    """Load a card image into a reportlab ImageReader.
+
+    PNGs are loaded directly — use these when pre-exported from Inkscape
+    for perfect rendering of filters, blend modes, and path text.
+    SVGs fall back to cairosvg rendering.
+    """
+    if img_path.suffix.lower() == ".png":
+        return ImageReader(str(img_path))
+
+    # SVG fallback via cairosvg
+    card_w_px = round(63 / 25.4 * DPI)
+    card_h_px = round(88 / 25.4 * DPI)
+    png_bytes = cairosvg.svg2png(
+        url=str(img_path.resolve()),
+        output_width=card_w_px,
+        output_height=card_h_px,
+    )
+    return ImageReader(io.BytesIO(png_bytes))
 
 
-def load_and_scale(svg_path):
-    """Load SVG and scale it to exactly CARD_W x CARD_H. Cached drawings get reused."""
-    d = svg2rlg(str(svg_path))
-    if d is None:
-        raise RuntimeError(f"svglib could not parse {svg_path}")
-    sx = CARD_W / d.width
-    sy = CARD_H / d.height
-    d.width = CARD_W
-    d.height = CARD_H
-    d.scale(sx, sy)
-    return d
+def draw_card(c, img_reader, x, y):
+    """Place a rendered card image at (x, y) on the canvas.
+
+    mask='auto' preserves any transparency in the SVG rather than
+    rendering it as black.
+    """
+    c.drawImage(img_reader, x, y, width=CARD_W, height=CARD_H, mask="auto")
 
 
 def build_pdf(cards, output_path):
-    # Cache scaled drawings so we don't re-parse the same SVG for every copy.
+    # Cache rendered images — same SVG path → same PNG bytes, no need to re-render.
     cache = {}
-    def get(svg_path):
-        # Each Drawing instance is mutable, so re-load per use (cheap for small SVGs).
-        # If perf matters, switch to a deep copy of a cached parsed drawing.
-        return load_and_scale(svg_path)
 
     c = canvas.Canvas(str(output_path), pagesize=A4)
     x0, y0 = compute_grid_origin()
+    unique = len(set(cards))
 
-    for i, svg_path in enumerate(cards):
+    for i, img_path in enumerate(cards):
+        if img_path not in cache:
+            print(f"  Loading {img_path.name} ({len(cache)+1}/{unique})")
+            cache[img_path] = render_card(img_path)
+
         slot = i % PER_PAGE
         col = slot % COLS
         row = slot // COLS
         x = x0 + col * (CARD_W + GUTTER)
-        # PDF coords go bottom-up; we want row 0 at the top visually.
         y = y0 + (ROWS - 1 - row) * (CARD_H + GUTTER)
 
-        drawing = get(svg_path)
-        draw_card(c, drawing, x, y)
+        draw_card(c, cache[img_path], x, y)
         draw_cut_marks(c, x, y)
 
         is_last_on_page = (slot == PER_PAGE - 1)
@@ -146,18 +172,22 @@ def build_pdf(cards, output_path):
 
 
 def main():
+    global DPI
     ap = argparse.ArgumentParser(description="Tile SVG cards onto A4 pages with cut marks.")
     ap.add_argument("config", help="Config file: 'filename quantity' per line")
     ap.add_argument("output", help="Output PDF path")
-    ap.add_argument("--svg-dir", default=".", help="Directory containing SVGs (default: .)")
+    ap.add_argument("--img-dir", default=".", help="Directory containing card images (default: .)")
+    ap.add_argument("--dpi", type=int, default=300, help="Render resolution (default: 300)")
     args = ap.parse_args()
+    DPI = args.dpi
 
     items = parse_config(args.config)
-    cards = expand_cards(items, args.svg_dir)
+    cards = expand_cards(items, args.img_dir)
+    unique = len(set(str(p) for p in cards))
     pages = (len(cards) + PER_PAGE - 1) // PER_PAGE
-    print(f"{len(cards)} cards across {pages} A4 page(s) at 9 cards/page.")
+    print(f"{len(cards)} cards ({unique} unique), {pages} A4 page(s), rendering at {DPI} DPI.")
     build_pdf(cards, args.output)
-    print(f"Wrote {args.output}")
+    print(f"Done → {args.output}")
 
 
 if __name__ == "__main__":

@@ -1,78 +1,88 @@
 # tile_cards
 
-Tile SVG playing cards onto A4 pages for printing at poker size (63×88mm).
+Tiles playing card images onto A4 pages for printing at poker size (63×88mm), 3×3 per page, with cut marks.
 
-- 3×3 grid per A4 page (9 cards per page)
-- 2mm gutter between cards
-- L-shaped cut marks at every card corner
-- Vector output — SVGs stay scalable in the final PDF
+## How it works
+
+Inkscape exports your SVGs to PNG at 300 DPI, then `tile_cards.py` places them onto A4 pages and outputs a print-ready PDF. Doing the rendering in Inkscape (rather than a third-party SVG library) means filters, blend modes, path text, and everything else renders exactly as it looks in the editor.
 
 ## Requirements
 
 - Python 3.8+
-- Linux, macOS, or Windows
-
-Install dependencies:
-
-```bash
-pip install reportlab svglib
-```
-
-## Usage
+- Inkscape (with CLI access)
+- Fish shell (for the export script)
 
 ```bash
-python3 tile_cards.py <config> <output.pdf> --svg-dir <path/to/svgs>
+pip install reportlab cairosvg
 ```
 
-Example:
+## Workflow
 
-```bash
-python3 tile_cards.py cards.txt deck.pdf --svg-dir ./svgs
+### 1. Export PNGs from Inkscape
+
+Run from `Scripts/`:
+
+```fish
+chmod +x process_cards.fish
+./process_cards.fish
 ```
 
-If your SVGs are in the current directory, `--svg-dir` can be omitted.
+This reads every `.svg` from `../Cards/`, exports a 300 DPI PNG to `../Cards-png/`, and prints each filename as it goes.
 
-## Config file format
+### 2. Write your config file
 
-Plain text, one entry per line: `filename quantity`. A bare filename defaults to quantity 1. Lines starting with `#` are comments.
+Create or update `cards.txt` — one card per line, filename then quantity. Bare filename defaults to quantity 1. Lines starting with `#` are comments.
 
 ```
 # Fronts
-ace_spades.svg 4
-king_hearts.svg 2
-queen_diamonds.svg 3
+Petty-Cash.png 3
+Hostile-Takeover.png 2
+Monopoly.png 1
 
 # Backs
-back_red.svg 26
-back_blue.svg 26
+title_cardback.png 26
+draw_cardback.png 26
+market_cardback.png 25
+```
+
+### 3. Generate the PDF
+
+Run from `Scripts/`:
+
+```bash
+python3 tile_cards.py cards.txt output.pdf --img-dir ../Cards-png
 ```
 
 ## Printing
 
-In your print dialog, set scale to **"Actual size"** or **100%**, NOT "Fit to page". Otherwise cards won't come out at poker size.
+Set your print dialog to **Actual Size / 100%** — not "Fit to page". Otherwise cards won't come out at poker size.
 
-Print single-sided. Fronts and backs are treated the same — list them in the same config to get one PDF, or use separate configs if you want separate files.
+Print single-sided. Run the script twice with separate config files if you want fronts and backs as separate PDFs.
 
 ## Cutting
 
-Cut marks point outward from each card corner into the gutter. Line a ruler up against them and cut with a craft knife or rotary trimmer.
+Each card has L-shaped cut marks at its four corners pointing outward into the gutter. Align a metal ruler to the marks and cut with a craft knife or rotary trimmer.
 
-## Adjusting the layout
+## Options
 
-Constants at the top of `tile_cards.py` control everything:
+| Flag | Default | Description |
+|---|---|---|
+| `--img-dir` | `.` | Directory containing card images |
+| `--dpi` | `300` | Render DPI for SVG fallback (ignored for PNGs) |
 
-| Constant | Default | What it does |
+To change the layout, edit the constants at the top of `tile_cards.py`:
+
+| Constant | Default | Description |
 |---|---|---|
 | `CARD_W`, `CARD_H` | 63mm, 88mm | Card dimensions |
-| `COLS`, `ROWS` | 3, 3 | Grid size per page |
+| `COLS`, `ROWS` | 3, 3 | Grid per page |
 | `GUTTER` | 2mm | Space between cards |
-| `MARK_LEN` | 3mm | Length of each cut mark |
-| `MARK_WIDTH` | 0.3pt | Cut mark line thickness |
+| `MARK_LEN` | 3mm | Cut mark length |
 
-## Troubleshooting
+## Files
 
-**svglib errors or weird rendering** — svglib handles most SVGs but can stumble on filters, complex gradients, or embedded raster images. If your cards don't render correctly, switch to cairosvg + PNG embedding (loses vectors but visually identical at print size).
-
-**Cards come out the wrong size** — check the print dialog scale setting. Must be 100% / Actual Size.
-
-**"SVG not found"** — `--svg-dir` is relative to where you run the command. Use an absolute path if in doubt.
+| File | Purpose |
+|---|---|
+| `process_cards.fish` | Exports SVGs → PNGs via Inkscape |
+| `tile_cards.py` | Tiles images onto A4 and outputs PDF |
+| `cards.txt` | Your card list with quantities |
