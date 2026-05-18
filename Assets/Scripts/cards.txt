@@ -1,0 +1,45 @@
+# Sample config for tile_cards.py
+# Format: filename quantity
+# Lines starting with # are comments. Filename alone = quantity 1.
+
+# --- Fronts (26 unique) ---
+Castle.svg 1
+City.svg 4
+Hamlet.svg 8
+#
+Petty-Cash.svg 8
+Aggressive-Expansion.svg 4
+Headhunt.svg 4
+Minor-Export.svg 8
+Branch-Office.svg 4
+Onboarding.svg 8
+Redeployment.svg 12
+#
+Hostile-Takeover.svg
+Strike-Action.svg
+Fortify.svg
+Angel-Investors.svg
+#
+Hostile-Negotiation.svg
+Corporate-Espionage.svg
+Political-Coup.svg
+Power-Play.svg
+#
+Market-Crash.svg
+Tax-Collection.svg
+Monopoly.svg
+Economic-Dominance.svg
+#
+Market-Slump.svg
+Mystical-Arbitrage.svg
+Time-Acceleration.svg
+Arcane-Surge.svg
+
+
+
+
+# --- Backs (3 unique) ---
+title_cardback.svg 13
+draw_cardback.svg 48
+market_cardback.svg 16:
+
