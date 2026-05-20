@@ -30,7 +30,7 @@ Tax-Collection.png
 Monopoly.png
 Economic-Dominance.png
 #
-Market-Slump.png
+Arcane-Recession.png
 Mystical-Arbitrage.png
 Time-Acceleration.png
 Arcane-Surge.png
