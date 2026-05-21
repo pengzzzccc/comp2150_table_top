@@ -1,0 +1,80 @@
+\documentclass[10pt]{article}
+
+\usepackage[a4paper,landscape,margin=10mm]{geometry}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{xcolor}
+\usepackage{lmodern}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\fboxsep}{0pt}
+\setlength{\fboxrule}{0.3pt}
+
+\newcommand{\SheetTitle}[1]{%
+  {\Large\bfseries Wolves of Wand Street -- Card PNG Assets\hfill
+  \normalsize Page #1\par}
+  \vspace{3mm}
+}
+
+\newcommand{\CardAsset}[1]{%
+  \begin{minipage}[t][0.455\textheight][t]{0.188\textwidth}
+    \centering
+    \fcolorbox{black!35}{white}{%
+      \includegraphics[width=0.97\linewidth,height=0.385\textheight,keepaspectratio]{\detokenize{Assets/Cards-png/#1}}%
+    }%
+    \vspace{1.2mm}
+
+    {\scriptsize\ttfamily\detokenize{#1}\par}
+  \end{minipage}%
+}
+
+\begin{document}
+
+\SheetTitle{1}
+\CardAsset{Aggressive-Expansion.png}\hfill
+\CardAsset{Angel-Investors.png}\hfill
+\CardAsset{Arcane Recession.png}\hfill
+\CardAsset{Arcane-Recession.png}\hfill
+\CardAsset{Arcane-Surge.png}
+
+\vspace{3mm}Hey everyone, as discussed at the end of the testing session yesterday we will do another round of testing in next week's class. I've scheduled it over the same period (12pm-5pm), so please be ready to test (with 2 stations) from 12pm again. We may remove some of those times if the other study comes online (should find out Friday), but I wanted to give COMP2150 students enough time to sign up. You can run the same test again or setup for a different test/build. We can also schedule some final consultations if any teams want to discuss any issues outside that time (but lets wait to see how much class time we have first). Please reach out if you have any issues or concerns.
+\CardAsset{Branch-Office.png}\hfill
+\CardAsset{Castle.png}\hfill
+\CardAsset{City.png}\hfill
+\CardAsset{Corporate-Espionage.png}\hfill
+\CardAsset{draw_cardback.png}
+
+\newpage
+
+\SheetTitle{2}
+\CardAsset{Economic-Dominance.png}\hfill
+\CardAsset{Fortify.png}\hfill
+\CardAsset{Hamlet.png}\hfill
+\CardAsset{Headhunt.png}\hfill
+\CardAsset{Hostile-Negotiation.png}
+
+\vspace{3mm}
+\CardAsset{Hostile-Takeover.png}\hfill
+\CardAsset{market_cardback.png}\hfill
+\CardAsset{Market-Crash.png}\hfill
+\CardAsset{Minor-Export.png}\hfill
+\CardAsset{Monopoly.png}
+
+\newpage
+
+\SheetTitle{3}
+\CardAsset{Mystical-Arbitrage.png}\hfill
+\CardAsset{Onboarding.png}\hfill
+\CardAsset{Petty-Cash.png}\hfill
+\CardAsset{Political-Coup.png}\hfill
+\CardAsset{Power-Play.png}
+
+\vspace{3mm}
+\CardAsset{Redeployment.png}\hfill
+\CardAsset{Strike-Action.png}\hfill
+\CardAsset{Tax-Collection.png}\hfill
+\CardAsset{Time-Acceleration.png}\hfill
+\CardAsset{title_cardback.png}
+
+\end{document}
