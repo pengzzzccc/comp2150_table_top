@@ -1,10 +1,48 @@
 # Wolves of Wand Street
 
-A card-driven area control tabletop game for 3–4 players. Players compete for territorial control using Gold, Investors, and hand cards across approximately 15 minutes of play.
+A card-driven area control tabletop game for 3–4 players. Players compete for territorial control using Gold, Investors, and hand cards in a fast-paced simultaneous action format. Each game lasts approximately 10 minutes across 3 rounds.
 
-**Design Doc (Google Docs):** [View Document](https://docs.google.com/document/d/1mX9XYYDw-CbnVyRhSKV3shZArk0qrV1g8R6hkMOyuRA/edit?tab=t.0)
+**Design Doc:** [Design_Doc.md](Design_Doc.md)
 
 **Print Sheet:** [Assets/Scripts/output.pdf](Assets/Scripts/output.pdf)
+
+---
+
+## Game File
+
+| File | Description |
+|------|-------------|
+| [wolves_of_wand_street.pcio](wolves_of_wand_street.pcio) | playingcards.io game file — open in [playingcards.io](https://playingcards.io) to play |
+
+---
+
+## Rules (All Versions)
+
+| Version | Description | Link |
+|---------|-------------|------|
+| **Super Quickplay Simultaneous** | Final version — simultaneous action phases, independent draw piles, 3 rounds, ~10 min | [Doc/Wolves_of_Wand_Street_SuperQuickplay_Rules_SIMULTANEOUS.md](Doc/Wolves_of_Wand_Street_SuperQuickplay_Rules_SIMULTANEOUS.md) |
+| v0.2 Simplified | Sequential play, 48-card shared deck, 3 card categories | [Doc/wolves_of_wand_street_rules_v0_2.md](Doc/wolves_of_wand_street_rules_v0_2.md) |
+| v1 Original | Sequential play, 52-card deck, Influence scoring, Free Actions | [Doc/Wolves_of_WandStreet.md](Doc/Wolves_of_WandStreet.md) |
+
+---
+
+## Design Document
+
+| File | Description |
+|------|-------------|
+| [Design_Doc.md](Design_Doc.md) | Full design document — target experience, core gameplay, interesting decisions, reflection |
+| [Doc/Design_Doc_Template.md](Doc/Design_Doc_Template.md) | COMP2150 design document template |
+| [Doc/Design_Doc_QA.md](Doc/Design_Doc_QA.md) | Design document Q&A working notes |
+
+---
+
+## Resources
+
+| File | Description |
+|------|-------------|
+| [Doc/COMP2150_Tabletop_Game_Description.pdf](Doc/COMP2150_Tabletop_Game_Description.pdf) | COMP2150 assessment brief and rubric |
+| [Doc/Hualalai_-_Design_Doc_Example.pdf](Doc/Hualalai_-_Design_Doc_Example.pdf) | Example design document (Hualalai) |
+| [Doc/note_for_playtest_new-rule.md](Doc/note_for_playtest_new-rule.md) | Playtest notes and observations |
 
 ---
 
