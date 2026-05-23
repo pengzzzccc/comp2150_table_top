@@ -6,8 +6,6 @@
 
 ## 1 · Target Experience
 
-> *~800 words recommended*
-
 ### High Concept
 
 Four ambitious entrepreneurs set sail for a virgin continent, a land untouched by commerce, ripe for conquest. In *Wolves of Wand Street*, 3–4 players race to build financial empires across an open frontier, simultaneously deploying investors, claiming territories, and waging economic warfare in a fast-paced card-driven area-control game. With simultaneous action phases, independent draw piles, and a streamlined three-round structure, each game lasts approximately 10 minutes and delivers a concentrated burst of resource management, territorial strategy, and competitive brinkmanship.
@@ -41,8 +39,6 @@ The game's form supports its fiction through consistent thematic layering. The t
 ---
 
 ## 2 · Core Gameplay
-
-> *~1200 words recommended*
 
 The game is built on three interlocking systems: the **Economy System**, the **Land & Deployment System**, and the **Contest (Combat) System**. A fourth supporting system, the **Market Card System**, layers strategic depth on top of these foundations. Each system creates a distinct type of decision tension, and their interactions ensure that no single strategy dominates.
 
@@ -106,8 +102,6 @@ Market Cards can modify contests: *Hostile Takeover* adds +2 virtual Investors t
 
 ## 3 · Interesting Decisions
 
-> *~1500 words recommended*
-
 The game produces several interlocking interesting decisions. The following five are the most strategically significant.
 
 ### 3.1 The King's Castle Dilemma: Claim Now or Wait?
@@ -159,8 +153,6 @@ Because the Action phase is simultaneous, players must anticipate opponents' mov
 
 ## 4 · Adding Variety
 
-> *~300 words recommended*
-
 Several mechanisms ensure that each playthrough feels distinct:
 
 **Independent Draw Piles.** Each player's 12-card draw pile is shuffled individually. The order in which Draw Cards appear varies, creating different resource and action sequences per player. One player may draw *Rapid Expansion* early and contest aggressively; another may draw *Minor Export* and build an economic engine.
@@ -178,8 +170,6 @@ Several mechanisms ensure that each playthrough feels distinct:
 ---
 
 ## 5 · Meeting the Design Brief
-
-> *~300 words recommended*
 
 ### Requirements Checklist
 
@@ -202,8 +192,6 @@ Several mechanisms ensure that each playthrough feels distinct:
 ---
 
 ## 6 · Production Process
-
-> *~400 words recommended*
 
 ### Tools
 
@@ -235,8 +223,6 @@ The team comprised four members (James, Louis, Marcus, and Aidan) with the follo
 ---
 
 ## 7 · Reflection
-
-> *~400 words recommended*
 
 ### Playtest Summary
 
