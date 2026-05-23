@@ -131,7 +131,7 @@ Players must decide when to deploy Investors from their hand onto lands versus k
 1. **Balanced:** Deployed Investors defend lands and generate visible strength, but are locked in place (except via *Redeployment* cards). Investors in hand are flexible: they can attack any land or defend by being deployed reactively, but don't contribute to defence until deployed.
 2. **Informed:** All deployed Investors are visible. Hand contents are hidden, creating information asymmetry. An opponent with many deployed Investors is strong on defence but may be vulnerable on offence.
 3. **Consequential:** Deploying all Investors onto lands maximises defence but leaves you unable to contest. Keeping all in hand maximises offensive potential but leaves your lands vulnerable to undefended capture.
-4. **Situational:** If you are the turn-order leader (act first in Attack & Contest), keeping Investors in hand for aggressive contests is viable. If you act last, deploying for defence may be wiser since others may contest your lands before you can act.
+4. **Situational:** Going last in the Attack & Contest phase is actually the strongest offensive position. As the final player to act, your defensive concerns are minimal: earlier players have already resolved their contests, so you face less risk of retaliation this round. You can commit all your Investors to attack knowing that your territories will generate fresh Investors at the start of the next Income phase. Conversely, going first means you must balance offence against defence, since later players may contest your newly exposed lands.
 
 ### 3.4 Draw Card Timing: When to Use Redeployment
 
