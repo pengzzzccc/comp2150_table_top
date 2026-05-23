@@ -18,17 +18,17 @@ Four ambitious entrepreneurs set sail for a virgin continent, a land untouched b
 
 The game presents two interlocking layers of challenge:
 
-**Intellectual Challenge.** Each player operates their own 12-card draw pile, creating a unique card economy per player. With a hand limit of five and two distinct card sources (free Draw Cards and purchasable Market Cards), players must continuously evaluate whether to invest Gold in Market Cards for future turns or spend it immediately for immediate advantage. The resource conversion loop (play cards to gain Gold, spend Gold to buy Market Cards, deploy Investors onto territories) requires multi-turn planning compressed into just three rounds. Because all players act simultaneously, you cannot react to opponents' actions in real time, so you must anticipate their likely moves and prepare accordingly.
+**Intellectual Challenge:** Each player operates their own 12-card draw pile, creating a unique card economy per player. With a hand limit of five and two distinct card sources (free Draw Cards and purchasable Market Cards), players must continuously evaluate whether to invest Gold in Market Cards for future turns or spend it immediately for immediate advantage. The resource conversion loop (play cards to gain Gold, spend Gold to buy Market Cards, deploy Investors onto territories) requires multi-turn planning compressed into just three rounds. Because all players act simultaneously, you cannot react to opponents' actions in real time, so you must anticipate their likely moves and prepare accordingly.
 
-**Social Challenge.** Timing aggression is critical. During the Action phase, players must read the table: who is accumulating Investors? Who is eyeing the King's Castle? And decide whether to contest aggressively or consolidate. The sequential Attack & Contest phase introduces turn-order dynamics: going first lets you claim contested lands before others, but going last lets you react to the board state. Holding Market Cards like *Political Coup* or *Corporate Espionage* creates implicit threats that shape opponents' decisions even before they are played.
+**Social Challenge:** Timing aggression is critical. During the Action phase, players must read the table: who is accumulating Investors? Who is eyeing the King's Castle? And decide whether to contest aggressively or consolidate. The sequential Attack & Contest phase introduces turn-order dynamics: going first lets you claim contested lands before others, but going last lets you react to the board state. Holding Market Cards like *Political Coup* or *Corporate Espionage* creates implicit threats that shape opponents' decisions even before they are played.
 
 ### Drama
 
 The dramatic arc follows a three-act structure compressed into three intense rounds:
 
-- **Round 1 (Foundation).** Players claim lands from the Land Pool, deploy Investors, and establish their economic engines. Tension is moderate: the King's Castle (worth 3 Land Points) looms as the ultimate prize, but claiming it requires committing a scarce Investor early.
-- **Round 2 (Escalation).** The first contests erupt. Market Cards enter play: *Hostile Takeover* inflates attack strength, *Fortify* locks down key territories, *Market Crash* devastates a leader's Gold reserves. Power balances shift with each engagement. Players who invested in Market Cards now wield dramatic advantages.
-- **Round 3 (Desperation).** Every action matters. Players must decide: contest for lands to maximise Land Points, or conserve Gold for the tiebreaker? You must commit to your plan and hope it outperforms theirs. The final scoring reveals winners and losers in a single dramatic moment.
+- **Round 1 (Foundation):** Players claim lands from the Land Pool, deploy Investors, and establish their economic engines. Tension is moderate: the King's Castle (worth 3 Land Points) looms as the ultimate prize, but claiming it requires committing a scarce Investor early.
+- **Round 2 (Escalation):** The first contests erupt. Market Cards enter play: *Hostile Takeover* inflates attack strength, *Fortify* locks down key territories, *Market Crash* devastates a leader's Gold reserves. Power balances shift with each engagement. Players who invested in Market Cards now wield dramatic advantages.
+- **Round 3 (Desperation):** Every action matters. Players must decide: contest for lands to maximise Land Points, or conserve Gold for the tiebreaker? You must commit to your plan and hope it outperforms theirs. The final scoring reveals winners and losers in a single dramatic moment.
 
 The **independent draw piles** create personal tension: each player's deck is finite (12 cards), and exhaustion is visible. Running out of cards in Round 3 means fewer options, forcing players to pace their card usage across all three rounds.
 
@@ -44,43 +44,44 @@ The game is built on three interlocking systems: the **Economy System**, the **L
 
 ### 2.1 The Economy System
 
-**Mechanics.** Each round opens with an **Income Phase**: all players gain 3 Gold, collect Investor income from their lands (Hamlet = 1, Thriving City = 2, King's Castle = 3), and draw 2 cards from their personal draw pile. Gold is spent on Market Cards (costs range from 2–6 Gold) and serves as a secondary tiebreaker at game end (Gold ÷ 5, rounded down).
+**Mechanics:** Each round opens with an **Income Phase**: all players gain 3 Gold, collect Investor income from their lands (Hamlet = 1, Thriving City = 2, King's Castle = 3), and draw 2 cards from their personal draw pile. Gold is spent on Market Cards (costs range from 2–6 Gold) and serves as a secondary tiebreaker at game end (Comparing the quantity of gold).
 
-**Design Intent.** Gold creates a **conversion dilemma** that recurs every round. Every Gold spent on a Market Card is Gold that cannot contribute to your tiebreaker score. The fixed 3 Gold base income ensures all players start each round with a minimum purchasing power, while land-based Investor income rewards territorial control with more deployment options. The per-player draw pile means card draw is predictable and controllable: you know exactly which 12 cards your deck contains, allowing strategic planning across all three rounds.
+**Design Intent:** Gold creates a **conversion dilemma** that recurs every round. Every Gold spent on a Market Card is Gold that cannot contribute to your tiebreaker score. The fixed 3 Gold base income ensures all players start each round with a minimum purchasing power, while land-based Investor income rewards territorial control with more deployment options. The per-player draw pile means card draw is predictable and controllable: you know exactly which 12 cards your deck contains, allowing strategic planning across all three rounds.
 
-**System Interaction.** Economy feeds Land & Deployment by enabling Market Card purchases (which can generate Investors or protect territories), but is gated by the Card System: you must draw the right cards and have Gold available. This three-way dependency means economic investment and territorial expansion must be carefully balanced.
+**System Interaction:** Economy feeds Land & Deployment by enabling Market Card purchases (which can generate Investors or protect territories), but is gated by the Card System: you must draw the right cards and have Gold available. This three-way dependency means economic investment and territorial expansion must be carefully balanced.
 
 ### 2.2 The Land & Deployment System
 
-**Mechanics.** The game uses a shared **Land Pool** containing 4 Hamlets and 1 King's Castle (the two starting Thriving Cities are already in players' setups). Each player begins with 1 Thriving City and 1 Hamlet, each defended by 2 Investors. During the Action phase, players may:
+**Mechanics:** The game uses a shared **Land Pool** containing 4 Hamlets and 1 King's Castle (the four starting Thriving Cities are already in players' setups). Each player begins with 1 Thriving City and 1 Hamlet, each defended by 2 Investors. During the Action phase, players may:
 - Deploy Investors from their hand onto lands they own.
 - Move deployed Investors between their own lands.
 - Claim a free land from the Land Pool by placing 1 Investor on it.
 
 Land values are: Hamlet = 1 Land Point (produces 1 Investor/turn), Thriving City = 2 Land Points (produces 2 Investors/turn), King's Castle = 3 Land Points (produces 3 Investors/turn).
 
-**Design Intent.** The Land Pool replaces a fixed map with **dynamic territory selection**. Players choose which lands to claim based on their current needs: early Hamlets are cheap and safe, while the King's Castle is high-value but highly contested. The fact that Investors are placed from the **hand** (not a reserve) means every deployment is a choice between defensive strength and offensive capability. Turn order breaks ties in purchasing, but claiming from the Land Pool happens during the sequential Attack & Contest phase, adding strategic timing pressure.
+**Design Intent:** The Land Pool replaces a fixed map with **dynamic territory selection**. Players choose which lands to claim based on their current needs: early Hamlets are cheap and safe, while the King's Castle is high-value but highly contested. The fact that Investors are placed from the **hand:** (not a reserve) means every deployment is a choice between defensive strength and offensive capability. Turn order breaks ties in purchasing, but claiming from the Land Pool happens during the sequential Attack & Contest phase, adding strategic timing pressure.
 
-**System Interaction.** The Land system feeds Economy by generating Investor income, which feeds back into card draw and deployment. Land modifiers (Minor Export, Branch Office) can permanently enhance a territory's output, creating investment incentives that interact with the contest system: a modified land is more valuable to capture.
+**System Interaction:** The Land system feeds Economy by generating Investor income, which feeds back into card draw and deployment. Land modifiers (Minor Export, Branch Office) can permanently enhance a territory's output, creating investment incentives that interact with the contest system: a modified land is more valuable to capture.
 
 ### 2.3 The Contest (Combat) System
 
-**Mechanics.** During the sequential Attack & Contest phase (turn order determined randomly each round), each player may contest up to 1 land per turn. To contest:
+**Mechanics:** During the sequential Attack & Contest phase (turn order determined randomly each round), each player may contest up to 1 land per turn. To contest:
 1. Commit Investors from your hand to attack any land on any player's board (no adjacency restriction).
 2. Compare Investor counts: **higher total wins**. **Defender wins ties** and keeps their land.
 3. Both sides lose Investors at a 1:1 ratio (placed back into Investor piles, **not** hands).
 4. The winning attacker's surviving Investors become the new defenders of the captured land and **cannot contest again this turn**.
 5. Additional Investors from the attacker's hand may be placed on the captured land.
 
-Market Cards can modify contests: *Hostile Takeover* adds +2 virtual Investors to your first contest; *Rapid Expansion* (a Draw Card) allows contesting 2 lands instead of 1.
+**Note:**
+1. Market Cards can modify contests: *"Hostile Takeover"* adds +2 virtual Investors to your first contest; *Rapid Expansion* (a Draw Card) allows contesting 2 lands instead of 1.
 
-**Design Intent.** The contest system is deliberately simple (pure Investor count comparison) to keep the focus on strategic resource allocation rather than combat mechanics. The 1:1 casualty rule creates meaningful attrition: even a successful attack depletes your forces. The defender-wins-ties rule makes aggression costly, encouraging deliberate build-ups rather than reckless assaults. The "any land" targeting rule (no adjacency restriction) means no player is ever safe, maintaining constant tension. The fact that surviving attackers become defenders creates a consequential deployment decision: commit too many Investors to attack and you leave your own lands vulnerable; commit too few and you lose the contest.
+**Design Intent:** The contest system is deliberately simple (pure Investor count comparison) to keep the focus on strategic resource allocation rather than combat mechanics. The 1:1 casualty rule creates meaningful attrition: even a successful attack depletes your forces. The defender-wins-ties rule makes aggression costly, encouraging deliberate build-ups rather than reckless assaults. The "any land" targeting rule (no adjacency restriction) means no player is ever safe, maintaining constant tension. The fact that surviving attackers become defenders creates a consequential deployment decision: commit too many Investors to attack and you leave your own lands vulnerable; commit too few and you lose the contest.
 
 **System Interaction.** Contests consume Investors from the hand, directly competing with deployment and claiming actions for the same limited resource. Market Cards that enhance combat (Hostile Takeover, Fortify) interact with the economy system through their Gold costs.
 
 ### 2.4 The Market Card System
 
-**Mechanics.** A shared Market displays 4 face-up cards from the Market pile (ranks J–A). During the Action phase, any player may buy a Market Card by paying its Gold cost. If two or more players want the same card, the player with the earliest turn order buys it. Bought cards go directly into the hand but **cannot be played on the turn they are bought**: they enter play when next drawn. Market refresh costs 2 Gold. Market Cards span four suits:
+**Mechanics.** A shared Market displays 4 face-up cards from the Market pile (ranks J–A). During the Action phase, any player may buy a Market Card in any time by paying its Gold cost. If two or more players want the same card, the player who first grabs the card purchases it. Bought cards go directly into the hand but **cannot be played on the turn they are bought**: they enter play when next drawn. Market refresh costs 2 Gold. Market Cards span four suits:
 - **♦ Diamonds (Operations):** Military enhancements (*Hostile Takeover, Strike Action, Fortify, Angel Investors*).
 - **♥ Hearts (Manipulation):** Direct player interaction (*Hostile Negotiation, Corporate Espionage, Political Coup, Power Play*).
 - **♠ Spades (Economy):** Economic warfare (*Market Crash, Tax Collection, Monopoly, Economic Dominance*).
@@ -92,7 +93,7 @@ Market Cards can modify contests: *Hostile Takeover* adds +2 virtual Investors t
 
 ### Additional Mechanics
 
-**Turn Order Dice/Chips.** Turn order for the Attack & Contest phase is randomised each round, preventing permanent first-player advantages and ensuring that initiative dynamics shift unpredictably.
+**Turn Order Dice/Chips.** Turn order for the Attack & Contest phase is randomised each round, preventing permanent non-starting player advantages and ensuring that initiative dynamics shift unpredictably.
 
 **Independent Draw Piles.** Each player has their own 12-card draw pile, eliminating the randomness of a shared deck and allowing players to plan their card usage across all three rounds. Exhaustion is permanent: if your draw pile is empty, draws are skipped.
 
@@ -112,6 +113,7 @@ The King's Castle (3 Land Points, 3 Investors/turn) is the most valuable land in
 2. **Informed:** All players can see the Land Pool and know the King's Castle's value. However, opponents' hand sizes and Investor counts are partially hidden: you can see deployed Investors but not those in hand.
 3. **Consequential:** Claiming the King's Castle in Round 1 gives you 2 extra Investors per turn for Rounds 2 and 3, a compounding advantage. But losing it to a contest wastes your initial Investor and gives the attacker a massive boost.
 4. **Situational:** If you go first in the Attack & Contest phase, claiming the King's Castle is safer (you act before potential attackers). If you go last, it may be wiser to claim a Hamlet first and contest the Castle later.
+5. **Strategic:** Claiming the King's Castle can shape the table's decisions: opponents must either spend resources contesting it immediately or risk letting you enter the next round with a stronger economy.
 
 ### 3.2 Market Card Investment vs. Gold Conservation
 
@@ -250,19 +252,19 @@ The **three-round structure** with escalating stakes creates a natural dramatic 
 
 ### Areas for Improvement
 
-**Turtling is too effective.** Playtest 3 data (agency 2.5/5, ability to stop a leader 2.0/5) confirms that defensive strategies dominate. Players who hoard Investors on a few key lands become nearly impossible to dislodge. Potential solutions include: increasing the casualty ratio for defenders, adding cards that bypass defences (e.g., *Strike Action* already returns Investors to hand), or limiting the number of Investors that can defend a single land.
+**Turtling is too effective:** Playtest 3 data (agency 2.5/5, ability to stop a leader 2.0/5) confirms that defensive strategies dominate. Players who hoard Investors on a few key lands become nearly impossible to dislodge. Potential solutions include: increasing the casualty ratio for defenders, adding cards that bypass defences (e.g., *Strike Action* already returns Investors to hand), or limiting the number of Investors that can defend a single land.
 
-**Player agency feels low.** Across all three playtests, agency scores ranged from 2.0 to 2.5/5. Players feel constrained by their small hand size and limited actions. Increasing the hand limit from 5 to 6, or allowing a third action in Round 3, could give players more room to execute strategies.
+**Player agency feels low:** Across all three playtests, agency scores ranged from 2.0 to 2.5/5. Players feel constrained by their small hand size and limited actions. Increasing the hand limit from 5 to 6, or allowing a third action in Round 3, could give players more room to execute strategies.
 
-**Information lag in simultaneous play.** Players who act faster during the Action phase may gain advantages by claiming contested Market Cards before opponents can react. Clear timing rules or a structured simultaneous resolution mechanism may be needed.
+**Information lag in simultaneous play:** Players who act faster during the Action phase may gain advantages by claiming contested Market Cards before opponents can react. Clear timing rules or a structured simultaneous resolution mechanism may be needed.
 
 ### Lessons Learned
 
-**Simplicity is the hardest design achievement.** The evolution from v1 (52 unique cards, sequential play, complex effects) to the Simultaneous Quickplay Edition (12-card draw piles, simultaneous actions, pure Investor contests) required removing features at every iteration. Each removal solved a playtesting problem and improved the player experience.
+**Simplicity is the hardest design achievement:** The evolution from v1 (52 unique cards, sequential play, complex effects) to the Simultaneous Quickplay Edition (12-card draw piles, simultaneous actions, pure Investor contests) required removing features at every iteration. Each removal solved a playtesting problem and improved the player experience.
 
-**Format shapes experience.** The shift from sequential to simultaneous play fundamentally changed the game's social dynamic, from a turn-by-turn strategy game to a shared-tension racing game. The format itself is a design choice with profound implications.
+**Format shapes experience:** The shift from sequential to simultaneous play fundamentally changed the game's social dynamic, from a turn-by-turn strategy game to a shared-tension racing game. The format itself is a design choice with profound implications.
 
-**Playtesting is irreplaceable.** Problems that seemed invisible during design (dice variance, Influence hoarding, turtling, pacing) only surfaced through structured playtesting with external participants. The gap between designer intent and player experience can only be bridged through external testing.
+**Playtesting is irreplaceable:** Problems that seemed invisible during design (dice variance, Influence hoarding, turtling, pacing) only surfaced through structured playtesting with external participants. The gap between designer intent and player experience can only be bridged through external testing.
 
 ---
 
