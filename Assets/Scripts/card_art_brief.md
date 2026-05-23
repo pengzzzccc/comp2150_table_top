@@ -148,3 +148,97 @@
 - 现有卡牌PNG导出：`Assets/Cards-png/`（26张PNG + 3张卡背）
 - 卡牌生成脚本：`Assets/Scripts/cards_png_assets.tex`
 - 游戏规则文档：`Doc/Wolves_of_Wand_Street_SuperQuickplay_Rules_SIMULTANEOUS.md`
+
+---
+
+## 九、ChatGPT 图片生成提示词
+
+> 将以下提示词完整复制并发送给 ChatGPT（需开启 DALL-E / 图片生成功能），即可批量生成全部29张美术资产。
+
+```
+I need you to generate 29 card art images for a tabletop game called "Wolves of Wand Street". The game blends classical city-state mercantile themes with Wall Street finance and a touch of arcane magic.
+
+STYLE REQUIREMENTS:
+- Consistent art style across ALL cards: semi-realistic digital painting with a painterly, textured feel
+- Color palette: gold, deep blue, dark red as primary colors; arcane purple and forest green as accents
+- Card dimensions: standard poker card ratio (63mm × 88mm), portrait orientation
+- Each card should have the card name as text at the top, an illustration taking up ~60% of the card, and effect text at the bottom
+- Market cards (J-A) must show the Gold cost in the top-right corner
+- Overall tone: predatory yet playful. "Wolf of Wall Street meets medieval mercantile guilds"
+
+GENERATE THE FOLLOWING CARDS (generate them ONE BY ONE in order):
+
+=== DRAW PILE CARDS (no cost, blue border) ===
+
+1. Petty Cash — A small pouch of gold coins spilling open. Warm golden lighting. Modest but welcome windfall. Text: "Petty Cash". Effect: "Gain 2 Gold". Qty: ×2
+
+2. Rapid Expansion — A map with territory markers being rapidly placed. Flags planted aggressively. Dynamic diagonal composition with speed lines. Text: "Rapid Expansion". Effect: "Contest 1 additional land this turn". Qty: ×1
+
+3. Headhunt — A recruitment poster or wanted notice. A silhouette figure being beckoned. Corporate headhunting meets fantasy. Text: "Headhunt". Effect: "Gain 1 Investor into your hand". Qty: ×1
+
+4. Minor Export — Merchant ships or caravans loaded with goods at a dock. Steady, reliable income feel. Text: "Minor Export". Effect: "Place on any land: +1 Gold per turn permanently. Transfers on capture. Stacks." Qty: ×2
+
+5. Branch Office — A new building being constructed beside an existing one. Blueprint or construction scene. Text: "Branch Office". Effect: "Place on any land: +1 Investor per turn permanently. Transfers on capture. Stacks." Qty: ×1
+
+6. Onboarding — A new recruit being welcomed. Handshake or orientation scene. Corporate onboarding meets military muster. Text: "Onboarding". Effect: "Gain 1 Investor, immediately place on a land you control". Qty: ×2
+
+7. Redeployment — Military figures retreating and reforming. Arrows showing movement between positions. Strategic withdrawal. Text: "Redeployment". Effect: "Retrieve up to 2 deployed Investors back into your hand". Qty: ×3
+
+=== MARKET CARDS — DIAMONDS (Operations, red border) ===
+
+8. Hostile Takeover (J, 3 Gold) — A corporate raider breaking through doors. Imposing figure with documents stamped "ACQUIRED". Aggressive, confrontational. Effect: "Your first contest this turn counts as if you committed 2 additional Investors".
+
+9. Strike Action (Q, 5 Gold) — Workers on strike with raised fists and picket signs. Chains across a factory gate. Disruptive and chaotic. Effect: "Return up to 3 Investors from a target land to that player's hand".
+
+10. Fortify (K, 4 Gold) — A fortress wall being reinforced. Stone blocks, barricades, shields. Solid, immovable, defensive. Effect: "Choose one of your lands. It cannot be contested this round".
+
+11. Angel Investors (A, 5 Gold) — Glowing figures descending from above, showering gold. Wings of light. Celestial, generous, powerful. Effect: "Gain 4 Investors, immediately place them in any of your lands".
+
+=== MARKET CARDS — HEARTS (Manipulation, red border) ===
+
+12. Hostile Negotiation (J, 2 Gold) — Two figures at a table, one slamming fists. Broken treaties, scattered papers. Tense, adversarial. Effect: "Force a player to discard 2 cards".
+
+13. Corporate Espionage (Q, 3 Gold) — A shadowy figure reading stolen documents through a magnifying glass. Dark alleys, hidden eyes. Spy aesthetic. Effect: "Look at any player's hand and steal one card".
+
+14. Political Coup (K, 4 Gold) — A throne being seized. A crown changing hands. Dramatic lighting, power transfer. Regal yet threatening. Effect: "Force one player to hand over one non-King's Castle land of your choice".
+
+15. Power Play (A, 5 Gold) — A figure standing atop a mountain of gold coins, arms raised. Opponents shrinking below. Dominance, supremacy. Effect: "Gain 3 Gold. Target player loses up to 3 Gold".
+
+=== MARKET CARDS — SPADES (Economy, dark border) ===
+
+16. Market Crash (J, 3 Gold) — A stock ticker plummeting. Broken coins, falling charts. Red downward arrows. Panic and destruction. Effect: "Target player loses half their Gold (rounded down)".
+
+17. Tax Collection (Q, 4 Gold) — A stern collector with an open ledger demanding payment. Reluctant citizens handing over coins. Authoritative. Effect: "Steal up to 1 Gold from every other player".
+
+18. Monopoly (K, 4 Gold) — A single figure owning everything on the board. All roads, buildings, resources converging to one point. Total control. Effect: "Steal up to 1 Gold from each player for each land they control".
+
+19. Economic Dominance (A, 5 Gold) — A golden lion or wolf standing atop a pile of treasure. Radiating wealth. Imperial, triumphant. Effect: "Double your Gold income for the next 2 INCOME phases".
+
+=== MARKET CARDS — CLUBS (Arcane, purple border) ===
+
+20. Arcane Recession (J, 2 Gold) — Gold coins dissolving into purple smoke. A vortex consuming wealth. Eerie, unsettling. Effect: "All other players lose 2 Gold immediately".
+
+21. Mystical Arbitrage (Q, 3 Gold) — Two scales balancing with gold coins and magical orbs swapping sides. Symmetrical composition. Effect: "Swap your Gold total with any other player".
+
+22. Time Acceleration (K, 4 Gold) — A clock or hourglass with hands spinning wildly. Speed lines, magical glow. Urgency and temporal distortion. Effect: "Draw up to 3 cards from your draw pile immediately".
+
+23. Arcane Surge (A, 6 Gold) — A massive wave of magical energy (purple and gold) surging forward. Explosive, overwhelming power. The most visually dramatic card. Effect: "Draw 2 Cards, then gain Gold and Investors as if you had the INCOME phase again".
+
+=== LAND CARDS (green border) ===
+
+24. Hamlet — A small village or farmstead. Modest, rural, humble. Thatched roofs, small fields. Warm but modest lighting. Text: "Hamlet". Effect: "Land Point: 1. Income: 1 Investor per turn". Generate 1 design (will be printed multiple times).
+
+25. Thriving City — A bustling commercial city. Markets, towers, guild halls. Vibrant, prosperous, active. Text: "Thriving City". Effect: "Land Point: 2. Income: 2 Investors per turn". Generate 1 design.
+
+26. The King's Castle — A grand castle on a hill. Impenetrable walls, golden banners. Majestic, powerful, the ultimate prize. Dramatic lighting. Text: "The King's Castle". Effect: "Land Point: 3. Income: 3 Investors per turn". Generate 1 design.
+
+=== CARD BACKS ===
+
+27. Draw Pile Back — Blue border. Central motif: a wolf howling at a coin-shaped moon. Text: "DRAW" at top. Repeating geometric pattern background.
+
+28. Market Pile Back — Gold border. Central motif: a marketplace or trading post. Text: "MARKET" at top. Ornate, luxurious design.
+
+29. Title/Land Back — Dark red border. Central motif: game logo "Wolves of Wand Street". Regal, official. Used for land cards.
+
+Please generate all 29 images. Maintain consistent art style, typography, and color palette across all cards. Each card should look like a professional tabletop game card with clear readability.
+```
