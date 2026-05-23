@@ -1,0 +1,253 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+
+\definecolor{gold}{HTML}{DAA520}
+\definecolor{diamonds}{HTML}{C41E3A}
+\definecolor{hearts}{HTML}{C41E3A}
+\definecolor{spades}{HTML}{2D2D2D}
+\definecolor{clubs}{HTML}{2D2D2D}
+\definecolor{arcane}{HTML}{6A0DAD}
+\definecolor{draw}{HTML}{2E86C1}
+\definecolor{land}{HTML}{27AE60}
+\definecolor{back}{HTML}{8B4513}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textsc{Wolves of Wand Street}}
+\fancyhead[R]{\textsc{Card Art Brief}}
+\fancyfoot[C]{\thepage}
+
+\title{\Huge\textbf{Wolves of Wand Street}\\[0.5em]\Large Card Art Asset Brief}
+\author{Team: James, Louis, Marcus, Aidan}
+\date{May 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\section{Overview}
+
+This document defines the complete art asset requirements for \textbf{Wolves of Wand Street}, a card-driven area-control tabletop game for 3--4 players. The game features 26 unique card designs and 3 card backs, totalling \textbf{29 art assets}.
+
+\subsection{Theme \& Style}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Setting:} A fusion of classical city-states and Wall Street finance, where investor-wizards wage economic warfare over uncharted territory.
+    \item \textbf{Tone:} Predatory yet playful. Think ``Wolf of Wall Street meets medieval mercantile guilds.''
+    \item \textbf{Colour palette:} Gold, deep blue, dark red, with accents of arcane purple and forest green.
+    \item \textbf{Card size:} Standard poker size (63mm $\times$ 88mm) or playingcards.io default.
+    \item \textbf{Resolution:} 300 DPI minimum, PNG format (transparent or full-bleed).
+\end{itemize}
+
+\subsection{Card Layout Requirements}
+
+Each card must include:
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Card name} (top)
+    \item \textbf{Art illustration area} (centre, $\sim$60\% of card face)
+    \item \textbf{Effect text} (bottom)
+    \item \textbf{Cost} (Market cards only, top-right corner, in Gold)
+    \item \textbf{Suit/type indicator} (corner icon or colour-coded border)
+    \item \textbf{Card count} (Draw cards only, bottom-left, e.g., $\times$2)
+\end{enumerate}
+
+\newpage
+
+% ============================================================
+\section{Draw Pile Cards (12 per player)}
+
+\textit{These cards are free to play. No Gold cost. Each player has their own 12-card Draw Pile.}
+
+\begin{longtable}{@{} c p{3.2cm} c p{5.5cm} @{}}
+\toprule
+\textbf{\#} & \textbf{Card Name} & \textbf{Qty/Player} & \textbf{Art Direction} \\
+\midrule
+\endhead
+1 & \textbf{Petty Cash} & $\times$2 & A small pouch of gold coins spilling open. Warm golden lighting. Suggests a modest but welcome windfall. \\
+\midrule
+2 & \textbf{Rapid Expansion} & $\times$1 & A map with territory markers being rapidly placed. Flags planted aggressively. Dynamic diagonal composition. Speed lines or motion blur. \\
+\midrule
+3 & \textbf{Headhunt} & $\times$1 & A recruitment poster or wanted notice. A silhouette figure being beckoned. Corporate headhunting meets fantasy recruitment. \\
+\midrule
+4 & \textbf{Minor Export} & $\times$2 & Merchant ships or caravans loaded with goods. A dock or trade route. Suggests steady, reliable income. Placed on a land to represent a permanent trade deal. \\
+\midrule
+5 & \textbf{Branch Office} & $\times$1 & A new building being constructed beside an existing one. Blueprint or construction scene. Suggests expansion of business operations. \\
+\midrule
+6 & \textbf{Onboarding} & $\times$2 & A new recruit being welcomed. Handshake, orientation, or ``welcome aboard'' scene. Corporate onboarding meets military muster. \\
+\midrule
+7 & \textbf{Redeployment} & $\times$3 & Military figures retreating and reforming. Arrows showing movement between positions. Suggests strategic withdrawal and repositioning. \\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+% ============================================================
+\section{Market Pile Cards (Ranks J--A, cost Gold)}
+
+\textit{These cards are purchased from a shared Market display. Costs range from 2--6 Gold. Bought cards go to hand but cannot be played the same turn.}
+
+% ---- Diamonds ----
+\subsection*{\texorpdfstring{$\diamondsuit$}{Diamonds} Diamonds: Operations}
+
+\textit{Theme: Military power, corporate aggression, strategic force.}
+
+\begin{longtable}{@{} c p{2.5cm} c c p{5cm} @{}}
+\toprule
+\textbf{\#} & \textbf{Card Name} & \textbf{Rank} & \textbf{Cost} & \textbf{Art Direction} \\
+\midrule
+\endhead
+8 & Hostile Takeover & J & 3 Gold & A corporate raider breaking through doors. An imposing figure with documents stamped ``ACQUIRED.'' Aggressive, confrontational. \\
+\midrule
+9 & Strike Action & Q & 5 Gold & Workers on strike with raised fists and picket signs. Chains across a factory gate. Disruptive and chaotic. \\
+\midrule
+10 & Fortify & K & 4 Gold & A fortress wall being reinforced. Stone blocks, barricades, shields. Solid, immovable, defensive. \\
+\midrule
+11 & Angel Investors & A & 5 Gold & Glowing figures descending from above, showering gold. Wings of light. Celestial, generous, powerful. \\
+\bottomrule
+\end{longtable}
+
+\subsection*{\texorpdfstring{$\heartsuit$}{Hearts} Hearts: Manipulation}
+
+\textit{Theme: Deception, diplomacy, social engineering. Subtle and cunning.}
+
+\begin{longtable}{@{} c p{2.5cm} c c p{5cm} @{}}
+\toprule
+\textbf{\#} & \textbf{Card Name} & \textbf{Rank} & \textbf{Cost} & \textbf{Art Direction} \\
+\midrule
+\endhead
+12 & Hostile Negotiation & J & 2 Gold & Two figures at a table, one slamming fists. Broken treaties, scattered papers. Tense, adversarial. \\
+\midrule
+13 & Corporate Espionage & Q & 3 Gold & A shadowy figure reading stolen documents through a magnifying glass. Dark alleys, hidden eyes. Spy aesthetic. \\
+\midrule
+14 & Political Coup & K & 4 Gold & A throne being seized. A crown changing hands. Dramatic lighting, power transfer. Regal yet threatening. \\
+\midrule
+15 & Power Play & A & 5 Gold & A figure standing atop a mountain of gold coins, arms raised. Opponents shrinking below. Dominance, supremacy. \\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\subsection*{\texorpdfstring{$\spadesuit$}{Spades} Spades: Economy}
+
+\textit{Theme: Wealth, trade, financial warfare. Gold and commerce.}
+
+\begin{longtable}{@{} c p{2.5cm} c c p{5cm} @{}}
+\toprule
+\textbf{\#} & \textbf{Card Name} & \textbf{Rank} & \textbf{Cost} & \textbf{Art Direction} \\
+\midrule
+\endhead
+16 & Market Crash & J & 3 Gold & A stock ticker plummeting. Broken coins, falling charts. Red downward arrows. Panic and destruction. \\
+\midrule
+17 & Tax Collection & Q & 4 Gold & A stern collector with an open ledger, demanding payment. Reluctant citizens handing over coins. Authoritative. \\
+\midrule
+18 & Monopoly & K & 4 Gold & A single figure owning everything on the board. All roads, all buildings, all resources converging to one point. Total control. \\
+\midrule
+19 & Economic Dominance & A & 5 Gold & A golden lion or wolf standing atop a pile of treasure. Radiating wealth. Imperial, triumphant. \\
+\bottomrule
+\end{longtable}
+
+\subsection*{\texorpdfstring{$\clubsuit$}{Clubs} Clubs: Arcane}
+
+\textit{Theme: Magic, mystery, supernatural forces. Purple, glowing, ethereal.}
+
+\begin{longtable}{@{} c p{2.5cm} c c p{5cm} @{}}
+\toprule
+\textbf{\#} & \textbf{Card Name} & \textbf{Rank} & \textbf{Cost} & \textbf{Art Direction} \\
+\midrule
+\endhead
+20 & Arcane Recession & J & 2 Gold & Gold coins dissolving into purple smoke. A vortex consuming wealth. Eerie, unsettling. \\
+\midrule
+21 & Mystical Arbitrage & Q & 3 Gold & Two scales balancing, with gold coins and magical orbs swapping sides. Mystical trade. Symmetrical composition. \\
+\midrule
+22 & Time Acceleration & K & 4 Gold & A clock or hourglass with hands spinning wildly. Speed lines, magical glow. Urgency and temporal distortion. \\
+\midrule
+23 & Arcane Surge & A & 6 Gold & A massive wave of magical energy (purple/gold) surging forward. Explosive, overwhelming power. The most visually dramatic card. \\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+% ============================================================
+\section{Land Cards}
+
+\textit{Territory cards that players claim and defend. Each land produces Investors per turn and is worth Land Points at game end.}
+
+\begin{longtable}{@{} c p{2.5cm} c c p{5cm} @{}}
+\toprule
+\textbf{\#} & \textbf{Land Name} & \textbf{Pts} & \textbf{Income} & \textbf{Art Direction} \\
+\midrule
+\endhead
+24 & Hamlet & 1 & 1 Inv/turn & A small village or farmstead. Modest, rural, humble. Thatched roofs, small fields. Warm but modest lighting. Quantity needed: 5 (4 in pool + 1 per player). \\
+\midrule
+25 & Thriving City & 2 & 2 Inv/turn & A bustling commercial city. Markets, towers, guild halls. Vibrant, prosperous, active. Quantity needed: 1 per player (starting land). \\
+\midrule
+26 & The King's Castle & 3 & 3 Inv/turn & A grand castle on a hill. Impenetrable walls, golden banners. Majestic, powerful, the ultimate prize. Dramatic lighting. Quantity needed: 1 (unique). \\
+\bottomrule
+\end{longtable}
+
+% ============================================================
+\section{Card Backs}
+
+\textit{Three distinct card back designs to distinguish Draw Pile, Market Pile, and Title cards.}
+
+\begin{longtable}{@{} c p{3cm} p{8cm} @{}}
+\toprule
+\textbf{\#} & \textbf{Name} & \textbf{Art Direction} \\
+\midrule
+\endhead
+27 & \textbf{Draw Pile Back} & Border colour: blue. Central motif: a wolf howling at a coin moon. Text: ``DRAW'' at top. Repeating geometric pattern background. Consistent with Draw Card aesthetic (free, personal). \\
+\midrule
+28 & \textbf{Market Pile Back} & Border colour: gold. Central motif: a marketplace or trading post. Text: ``MARKET'' at top. Ornate, luxurious design suggesting valuable purchasable cards. \\
+\midrule
+29 & \textbf{Title Back} & Border colour: dark red. Central motif: game logo (``Wolves of Wand Street''). Used for land cards and general purposes. Regal, official. \\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+% ============================================================
+\section{Summary Table}
+
+\begin{longtable}{@{} l c c @{}}
+\toprule
+\textbf{Category} & \textbf{Unique Designs} & \textbf{Notes} \\
+\midrule
+\endhead
+Draw Pile Cards & 7 & 12 cards per player (repeats) \\
+Market Pile Cards & 16 & 4 suits $\times$ 4 ranks (J, Q, K, A) \\
+Land Cards & 3 & Hamlet (5$\times$), City ($\times$n), Castle (1$\times$) \\
+Card Backs & 3 & Draw / Market / Title \\
+\midrule
+\textbf{Total} & \textbf{29} & \\
+\bottomrule
+\end{longtable}
+
+\section{Delivery Requirements}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Format:} PNG, 300 DPI minimum
+    \item \textbf{Size:} Standard poker card (63mm $\times$ 88mm) or playingcards.io compatible
+    \item \textbf{Background:} Full-bleed (extend to card edge) or transparent
+    \item \textbf{Text:} All card names, effects, and costs must be clearly readable at print size
+    \item \textbf{Colour coding:} Each suit should be visually distinct (Diamonds = red, Hearts = red, Spades = dark, Clubs = purple)
+    \item \textbf{Consistency:} All cards should share a cohesive art style, colour palette, and typographic treatment
+\end{itemize}
+
+\section{Reference Files}
+
+\begin{itemize}[leftmargin=*]
+    \item Existing card SVGs: \texttt{Assets/Cards/} (26 SVG source files)
+    \item Existing card PNGs: \texttt{Assets/Cards-png/} (26 PNG exports + 3 card backs)
+    \item Card generation script: \texttt{Assets/Scripts/cards\_png\_assets.tex}
+    \item Game rules: \texttt{Doc/Wolves\_of\_Wand\_Street\_SuperQuickplay\_Rules\_SIMULTANEOUS.md}
+\end{itemize}
+
+\end{document}
