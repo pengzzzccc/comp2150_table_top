@@ -8,7 +8,7 @@ City.png 4
 Hamlet.png 8
 #
 Petty-Cash.png 8
-Aggressive-Expansion.png 4
+Aggressive-Expansion.png 8
 Headhunt.png 4
 Minor-Export.png 8
 Branch-Office.png 4
