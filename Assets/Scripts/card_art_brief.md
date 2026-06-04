@@ -159,12 +159,17 @@
 I need you to generate 29 card art images for a tabletop game called "Wolves of Wand Street". The game blends classical city-state mercantile themes with Wall Street finance and a touch of arcane magic.
 
 STYLE REQUIREMENTS:
-- Consistent art style across ALL cards: semi-realistic digital painting with a painterly, textured feel
-- Color palette: gold, deep blue, dark red as primary colors; arcane purple and forest green as accents
-- Card dimensions: standard poker card ratio (63mm × 88mm), portrait orientation
-- Each card should have the card name as text at the top, an illustration taking up ~60% of the card, and effect text at the bottom
-- Market cards (J-A) must show the Gold cost in the top-right corner
-- Overall tone: predatory yet playful. "Wolf of Wall Street meets medieval mercantile guilds"
+- All cards adopt a unified art style: planarism, geometricism, and a strong sense of form and lines. Light and shadow relationships are incorporated while maintaining collectivism.
+
+- Color scheme: Free to choose, as long as it fits the theme.
+
+- Card size: Standard playing card proportions (63mm x 88mm), portrait orientation.
+
+- Each card should have its name printed at the top, an illustration occupying approximately 60% of the card's area below, and effect text at the bottom.
+
+- Market cards (J-A) must display the gold coin price in the upper right corner.
+
+- Overall tone: Both predatory and playful. "The Wolf of Wall Street Meets the Medieval Merchant Guild"
 
 GENERATE THE FOLLOWING CARDS (generate them ONE BY ONE in order):
 
@@ -241,4 +246,90 @@ GENERATE THE FOLLOWING CARDS (generate them ONE BY ONE in order):
 29. Title/Land Back — Dark red border. Central motif: game logo "Wolves of Wand Street". Regal, official. Used for land cards.
 
 Please generate all 29 images. Maintain consistent art style, typography, and color palette across all cards. Each card should look like a professional tabletop game card with clear readability.
+
+
+边框提示词
+Create a professional tabletop card frame template for a fantasy-finance board game called "Wolves of Wand Street".
+
+IMPORTANT OUTPUT REQUIREMENTS:
+- Final canvas size: 822 × 1117 px
+- Portrait orientation
+- PNG with transparent background support
+- The frame must be designed as a reusable UI template, not a finished card
+- All cards must use exactly the same layout proportions and fixed border thickness
+- Keep all frame geometry perfectly consistent across future variants
+
+STYLE:
+- Strong planarism and geometricism
+- Stained-glass inspired structure
+- Bold clean linework
+- Elegant gold trim with subtle beveling
+- Medieval mercantile + fantasy finance aesthetic
+- Decorative but controlled
+- Refined, professional, printable card-game UI
+- Keep a premium, polished look
+
+LAYOUT (MUST STAY FIXED):
+- Safe area based on a standard poker card layout
+- A fixed title area at the top
+- A large fixed illustration window in the middle
+- A fixed rules/effect text box at the bottom
+- A fixed circular badge area at bottom-left for quantity / icon
+- A fixed top-right circular or badge area for cost / secondary icon
+- A fixed top-left suit/type icon area
+- All of these areas must stay in identical position and size across all variants
+
+TRANSPARENCY REQUIREMENT:
+- The inner fill of the title area must be transparent
+- The central illustration area must be fully transparent
+- The inner fill of the bottom text box must be transparent
+- The inner fill of icon/cost circles or badges should also be transparent where appropriate
+- Only the frame, trim, ornaments, outlines, and subtle shadow details should remain visible
+- Preserve very fine inner shadow, bevel shadow, and delicate edge shading around the frame elements so the template still feels dimensional
+- Do NOT flatten the transparent areas into beige or white panels
+- Do NOT place any background behind the transparent openings
+
+VISUAL CONSTRUCTION:
+- Outer border thickness must be uniform and fixed
+- Decorative corner ornaments must be symmetrical and consistent
+- Gold framing lines should be crisp and evenly weighted
+- Use a geometric stained-glass mosaic texture only inside the border material itself
+- Keep the central transparent cutout clean and well defined
+- Rounded outer card corners
+- Print-friendly clean edges
+
+DO NOT INCLUDE:
+- no illustration
+- no characters
+- no scenery
+- no text labels
+- no card names
+- no rules text
+- no numbers
+- no extra symbols outside the designed icon slots
+- no mockup background
+- no drop shadow outside the card unless extremely subtle and part of the edge treatment
+- no collage, no multiple cards, generate only one single card frame
+
+COLOR VARIANT:
+Use [COLOR / SUIT VARIANT HERE] as the primary frame color theme while keeping the exact same structure and proportions.
+
+Draw 边框
+deep royal blue with gold trim
+
+Diamonds / Operations 边框
+crimson red with gold trim, diamond-themed icon slot
+
+Hearts / Manipulation 边框
+dark red with gold trim, heart-themed icon slot
+
+Spades / Economy 边框
+charcoal black with gold trim, spade-themed icon slot
+
+Clubs / Arcane 边框
+arcane purple with gold trim, club-themed icon slot
+
+Land 边框
+forest green with gold trim, neutral land-themed icon styling
+
 ```
