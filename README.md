@@ -6,6 +6,8 @@ A card-driven area control tabletop game for 3–4 players. Players compete for 
 
 **Print Sheet:** [Assets/Scripts/output.pdf](Assets/Scripts/output.pdf)
 
+**survey:** https://forms.cloud.microsoft/r/D7gBTRDaki
+
 ---
 
 ## Game File
